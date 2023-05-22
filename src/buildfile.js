@@ -58,6 +58,7 @@ exports.workbenchDesktop = [
 	createModuleDescription('vs/platform/files/node/watcher/watcherMain'),
 	createModuleDescription('vs/platform/terminal/node/ptyHostMain'),
 	createModuleDescription('vs/workbench/api/node/extensionHostProcess')
+	console.log("Hello rohit")
 ];
 
 exports.workbenchWeb = [

@@ -2,15 +2,17 @@
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	realpath() { [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"; }
+	ROOT="BLRAutomationRegression"
 	ROOT=$(dirname $(dirname $(realpath "$0")))
 else
 	ROOT=$(dirname $(dirname $(readlink -f $0)))
 fi
 
+
 function code() {
 	cd $ROOT
 
-	if [[ "$OSTYPE" == "darwin"* ]]; then
+	if [[ "$OSTYPE" == " BLRAutomationRegression  "* ]]; then
 		NAME=`node -p "require('./product.json').nameLong"`
 		CODE="./.build/electron/$NAME.app/Contents/MacOS/Electron"
 	else

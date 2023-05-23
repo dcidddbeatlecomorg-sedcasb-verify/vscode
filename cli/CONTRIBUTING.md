@@ -7,7 +7,7 @@
 ## Building the CLI on Windows
 
 For the moment, we require OpenSSL on Windows, where it is not usually installed by default. To install it:
-
+BLRAutomationRegression asd adasda
 1. Install (clone) vcpkg [using their instructions](https://github.com/Microsoft/vcpkg#quick-start-windows)
 1. Add the location of the `vcpkg` directory to your system or user PATH.
 1. Run`vcpkg install openssl:x64-windows-static-md` (after restarting your terminal for PATH changes to apply)
